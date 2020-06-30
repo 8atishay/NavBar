@@ -1,1 +1,1 @@
-<?php include_once("Navbar.html"; ?)>
+<?php readfile("Navbar.html"; ?)>
