@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" 
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+                crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <style>
+            .p{
+                background-color:yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- responsive fixed width container -->
+        <p style="color:crimson; font-size: 30px;">Container</p>
+        <div class="container">
+            <h1> responsive fixed width container<br>
+                <code>code</code> </h1>
+            <p class="p">class="container"</p>
+        </div>
+        <!-- with a full width container -->
+        <div class="container-fluid" style="border: 1px black solid; margin: 2px; padding: 2px;">
+            <h1>with a full width container</h1>
+            <p class="p">class="container-fluid"</p>
+        
+            <p style="color:crimson; font-size: 30px;">Grid</p>
+            <div class="row">
+                
+                <!-- <div class="col-sm-3" style="background-color: pink;">.col-sm-3: &gt;= 768px</div>
+                <div class="col-xl-3" style="background-color: lavender;">.col-xs-3 : &lt;= 768px</div>
+                <div class="col-md-3" style="background-color: lime;">.col-md-3: &gt;= 992px</div>
+                <div class="col-lg-3" style="background-color: cyan;">.col-lg-3 : &gt;= 1200px</div> -->
+                
+            </div>
+            <p>The following example will result in a 25%/75% split on small devices and a 50%/50% split on medium (and large) devices. On extra small devices, it will automatically stack (100%).
+                <br><strong>Types: sm xl md lg</strong>
+            </p>
+            <div class="row">
+                <div class="col-sm-3 col-md-6" style="background-color:yellow;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>                    
+                <div class="col-sm-9 col-md-6" style="background-color:pink;">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </div>
+            </div>
+            
+            <p style="color:crimson; font-size: 30px;">Typography</p>
+            <h1>h1<small>small</small></h1>
+            <blockquote class="blockquote text-right" style="background-color: greenyellow;">
+                <p>
+                    <abbr title="Abbriviation">abbr</abbr>
+                    <mark>highlight (mark)</mark>    
+                </p>
+                <footer class="blockquote-footer">blockquote text-right</footer>
+            </blockquote>
+            DL: discription list
+            <dl>
+                <dt>DT</dt>
+                <dd>DD</dd>
+                <dt>Coffee</dt>
+                <dd>black hot drink</dd>
+            </dl>
+            <kbd>kbd CTRL+P</kbd>
+            <p class="text-muted">This text is muted</p>
+            <p class="text-primary">This text is primary</p>
+            <p class="text-success">This text is success</p>
+            <p class="text-info">This text is information</p>
+            <p class="text-warning">This text is warning</p>
+            <p class="text-danger">This text is danger</p>
+            <p class="bg-muted">This bg is muted</p>
+            <p class="bg-primary">This bg is primary</p>
+            <p class="bg-success">This bg is success</p>
+            <p class="bg-info">This bg is information</p>
+            <p class="bg-warning">This bg is warning</p>
+            <p class="bg-danger">This bg is danger</p>
+        </div>
+        <div class="container-fluid" style="border: 1px black solid; margin: 2px; padding: 2px;">
+            <div class="container"><h2>Basic Table</h2>
+                <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>july@example.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive"><h2>Table</h2>
+                <p>The .table-responsive class creates a responsive table which will scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Annrdfghfhfhugjfgyukfhgyjfhdjhfhkfghjfhfhjkjghkufythfykugyujkhfgja</td>
+                            <td>Pitt</td>
+                            <td>35</td>
+                            <td>New York</td>
+                            <td>USA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container"><h2>Striped Rows</h2>
+                <p>The .table-striped class adds zebra-stripes to a table:</p>            
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>july@example.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            
+            
+        </div>
+    </body>
+</html>
